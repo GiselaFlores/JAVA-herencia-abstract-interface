@@ -12,18 +12,19 @@ public abstract class Animal {
         this.edad = edad;
     }
 
-    //metodos get set
+    //métodos set get
 
     public void comer(){
-        System.out.println("comiendo.....");
+        System.out.println("Comiendo....");
     }
 
     public void dormir(){
-        System.out.println("Shsssss durmiendo...");
+        System.out.println("Shhhhhhhhhh... durmiendo");
     }
 
-    //metodo abstracto
+    //método abstracto
 
     public abstract void alimentarse();
+
 }
 

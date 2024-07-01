@@ -1,7 +1,6 @@
 package ar.com.codoacodo;
 
-public class Perro extends Animal implements TipoAnimal{
-
+public class Perro extends Animal implements TipoAnimal {
     public String raza;
 
     //constructor
@@ -11,10 +10,10 @@ public class Perro extends Animal implements TipoAnimal{
         this.raza = raza;
     }
 /* 
-    public Perro(){
-        super();
+    public Perro(){  
     }
 */
+
     //métodos get set
 
     public String getRaza(){
@@ -24,12 +23,14 @@ public class Perro extends Animal implements TipoAnimal{
     public void setRaza(String raza){
         this.raza = raza;
     }
-    
-    //método propio
+
+    // método propio
 
     public void ladrar(){
-        System.out.println("Guauuuu guauuuu....");
+        System.out.println("Guauuuu guauuuu...");
     }
+
+    //método abtracto de animal
 
     @Override
     public void alimentarse(){
@@ -37,12 +38,12 @@ public class Perro extends Animal implements TipoAnimal{
     }
 
     @Override
-    public void mostrarTipo(){
-        System.out.println("Es un perro lindo");
+    public void mostrarNombre(){
+        System.out.println("El nombre es: ");
     }
 
     @Override
-    public void mostrarNombre(){
-        System.out.println("El nombre es:");
+    public void mostrarTipo(){
+        System.out.println("Es un perro lindo");
     }
 }
